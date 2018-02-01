@@ -8,6 +8,9 @@ class App extends React.PureComponent {
                     <input placeholder="Имя Steam аккаунта" className="steamid__input" />
                     <button className="steamid__refresh_button">Обновить</button>
                 </div>
+                <div>
+                    
+                </div>
             </div>
         )
     }
