@@ -1,10 +1,14 @@
-const { FuseBox, CSSModules, CSSPlugin, BabelPlugin } = require("fuse-box");
+const { FuseBox, CSSModules, CSSPlugin, BabelPlugin, CSSResourcePlugin } = require("fuse-box");
 const fuse = FuseBox.init({
     homeDir : "./",
     target : 'electron',
     output : "dist/$name.js",
     plugins : [
-        BabelPlugin(), CSSModules, CSSPlugin
+        BabelPlugin(), CSSPlugin(
+            {
+                group: 'bundle.css',
+                outFile: 'dist/bundle.css'
+            })
     ]
 })
 fuse.dev(); // launch http server

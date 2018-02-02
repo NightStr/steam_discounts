@@ -48,6 +48,11 @@
       "deps": {},
       "name": "react-dom",
       "version": "16.2.0"
+    },
+    "fuse-box-css@0.0.1": {
+      "deps": {},
+      "name": "fuse-box-css",
+      "version": "0.0.1"
     }
   },
   "flat": {
@@ -132,6 +137,13 @@
         "index.js",
         "cjs/react-dom.production.min.js",
         "cjs/react-dom.development.js"
+      ]
+    },
+    "fuse-box-css@0.0.1": {
+      "name": "fuse-box-css",
+      "version": "0.0.1",
+      "files": [
+        "index.js"
       ]
     }
   }
